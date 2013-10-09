@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Inchoo
+ * @package     Inchoo_FoxMetrics
+ * @author      Branko Ajzele <ajzele@gmail.com>
+ * @copyright   Copyright (c) Inchoo
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<layout version="0.1.0">
+    <default>
+        <reference name="before_body_end">
+            <block type="inchoo_foxmetrics/base_script" name="inchoo_foxmetrics_base_script" />
+        </reference>
+    </default>
+    <customer_logged_in>
+        <reference name="before_body_end">
+            <block type="inchoo_foxmetrics/customer" name="inchoo_foxmetrics_customer" />
+        </reference>
+    </customer_logged_in>
+    <catalog_product_view>
+        <reference name="before_body_end">
+            <block type="inchoo_foxmetrics/event_catalog_product_view" name="inchoo_foxmetrics_event_catalog_product_view" />
+        </reference>
+    </catalog_product_view>
+    <checkout_cart_index>
+        <reference name="before_body_end">
+            <block type="inchoo_foxmetrics/event_checkout_cart_index" name="inchoo_foxmetrics_event_checkout_cart_index" />
+        </reference>
+    </checkout_cart_index>
+    <checkout_onepage_success>
+        <reference name="before_body_end">
+            <block type="inchoo_foxmetrics/event_checkout_onepage_success" name="inchoo_foxmetrics_event_checkout_onepage_success" />
+        </reference>
+    </checkout_onepage_success>
+</layout>

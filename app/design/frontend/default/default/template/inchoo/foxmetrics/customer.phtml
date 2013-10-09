@@ -1,0 +1,14 @@
+<?php
+/**
+ * @category    Inchoo
+ * @package     Inchoo_FoxMetrics
+ * @author      Branko Ajzele <ajzele@gmail.com>
+ * @copyright   Copyright (c) Inchoo
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+?>
+<?php if (($identify = $this->getIdentify())): ?>
+    <script type="text/javascript">
+        _fxm.events.push(['_fxm.visitor.profile', '<?php echo $identify->getId() ?>', '<?php echo $identify->getFirstname() ?>', '<?php echo $identify->getLastname() ?>', '<?php echo $identify->getEmail() ?>']);
+    </script>
+<?php endif; ?>
